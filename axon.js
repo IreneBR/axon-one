@@ -24,18 +24,14 @@ function checkedBox(checkbox)
 {
    
     	//console.log("yay");
-    	//data["Main"] = jq_TabContents_Mian;
     	
     	if (checkbox.checked){
         	data[checkbox.name] = checkbox.value;
     	} else {
     		delete data[checkbox.name];
     	}
-	var res = "";
-        for (var key in data) {
-    		res = res + key + ": " + data[key] + "\r";
-	}
-	$("#counter").html(res);
+	//var res = makeResultString();
+	//$("#counter").html(res);
     
 }
 
@@ -44,11 +40,10 @@ function changeSelect(sel)
 	if (sel.value != "empty"){
         	data[sel.name] = sel.value;
 	} else {
-		alert("erasing it");
 		delete data[sel.name];
 	}
-	var res = makeResultString();
-	$("#counter").html(res);
+	//var res = makeResultString();
+	//$("#counter").html(res);
 }
 
 function sendData()
