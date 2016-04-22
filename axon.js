@@ -26,3 +26,8 @@ function checkedBox(checkbox)
         $("#counter").html(checkbox.name + " set to " +checkbox.value);
     }
 }
+
+function changeSelect(sel)
+{
+	$("#counter").html(sel.name + " set to " + sel.value);
+}
