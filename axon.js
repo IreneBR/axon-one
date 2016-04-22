@@ -18,11 +18,11 @@
 })();
 
 var x = 5;
-function checkCounter(checkbox)
+function checkedBox(checkbox)
 {
     if (checkbox.checked)
     {
     	console.log("yay");
-        $("#counter").html(checkbox.value + " go to hell");
+        $("#counter").html(checkbox.name + " set to " +checkbox.value);
     }
 }
