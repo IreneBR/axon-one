@@ -69,7 +69,7 @@
 			<div class="app-button orange" onclick="App.load('Home');" >Back</div>
 			
 			<form action="demo_form.asp">
-			  <input type="checkbox" name="injured" value="Yes"> I am injured<br>
+			  <input type="checkbox" name="injured" value="Yes" onclick="checkCounter(this)"> I am injured<br>
 			  <input type="checkbox" name="other-injured" value="Yes" checked> I am with someone injured<br>
 			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
 			  <input type="checkbox" name="other-stuck" value="Yes" checked> I am with someone that is stuck<br>
@@ -79,7 +79,7 @@
 			  <input type="checkbox" name="destruction" value="No" checked> I don't see any destructed building<br>
 			</form>
 			
-			<div id="sensordata" > omg omg
+			<div id="counter" > omg omg
       			</div>
       
 			<div class="app-button orange">Send</div>
