@@ -25,7 +25,12 @@ function checkedBox(checkbox)
    
     	//console.log("yay");
     	//data["Main"] = jq_TabContents_Mian;
-        data[checkbox.name] = checkbox.value;
+    	
+    	if (checkbox.checked){
+        	data[checkbox.name] = checkbox.value;
+    	} else {
+    		delete data[checkbox.nam];
+    	}
 	var res = "";
         for (var key in data) {
     		res = res + key + ": " + data[key] + "\r";
