@@ -17,19 +17,20 @@
 
 })();
 
-var data = {}; // no need for an array
-
-
-/*for (var key in arr_jq_TabContents) {
-    console.log(arr_jq_TabContents[key]);
-}*/
+var data = {}; 
 
 function checkedBox(checkbox)
 {
    
-    	console.log("yay");
+    	//console.log("yay");
     	//data["Main"] = jq_TabContents_Mian;
         $("#counter").html(checkbox.name + " set to " +checkbox.value);
+        
+        var res = "";
+        for (var key in data) {
+    		res = res + key + ": " + data[key];
+	}
+	$("#counter").html(res);
     
 }
 
