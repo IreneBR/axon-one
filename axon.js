@@ -23,6 +23,6 @@ function checkCounter(checkbox)
     if (checkbox.checked)
     {
     	console.log("yay");
-        $("#counter").html(checkbox.value " totally");
+        $("#counter").html(checkbox.value);
     }
 }
