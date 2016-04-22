@@ -15,14 +15,15 @@
 		
 	}, 1000);
 	
+
+})();
+
 	
 	function checkCounter(checkbox)
 	{
 	    if (checkbox.checked)
 	    {
-	        $("#counter").html("666")
+	    	console.log("yay");
+	        $("#counter").html("666");
 	    }
 	}
-	
-
-})();
