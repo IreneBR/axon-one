@@ -47,11 +47,10 @@ function changeSelect(sel)
         for (var key in data) {
     		res = res + key + ": " + data[key] + "\r";
 	}
-	alert("AAAAAH");
 	$("#counter").html(res);
 }
 
 function sendData()
 {
-	
-}
+	alert("Sending " + data);
+} 
