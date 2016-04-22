@@ -18,15 +18,15 @@
 })();
 
 var data = {}; 
+var res = "";
 
 function checkedBox(checkbox)
 {
    
     	//console.log("yay");
     	//data["Main"] = jq_TabContents_Mian;
-        $("#counter").html(checkbox.name + " set to " +checkbox.value);
         data[checkbox.name] = checkbox.value;
-        var res = "";
+
         for (var key in data) {
     		res = res + key + ": " + data[key] + "\r";
 	}
@@ -36,5 +36,11 @@ function checkedBox(checkbox)
 
 function changeSelect(sel)
 {
-	$("#counter").html(sel.name + " set to " + sel.value);
+
+        data[sel.name] = sel.value;
+
+        for (var key in data) {
+    		res = res + key + ": " + data[key] + "\r";
+	}
+	$("#counter").html(res);
 }
