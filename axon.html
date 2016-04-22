@@ -30,7 +30,7 @@
 		<div class="app-section">
 			<div class="app-button green" onclick="App.load('Earthquake');" >Earthquake</div>
 			<div class="app-button blue" onclick="App.load('Tsunami');" >Tsunami</div>
-			<div class="app-button black" onclick="App.load('Hurricane');" >Hurricane</div>
+			<div class="app-button grey" onclick="App.load('Hurricane');" >Hurricane</div>
 			<div class="app-button red" onclick="App.load('Other');" >Other</div>
 		</div>
 </div>
@@ -46,12 +46,13 @@
 			
 			<form action="demo_form.asp">
 			  <input type="checkbox" name="injured" value="Yes"> I am injured<br>
-			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
 			  <input type="checkbox" name="other-injured" value="Yes" checked> I am with someone injured<br>
-			  <input type="checkbox" name="urgent-help" value="Yes" checked> I need to be rescued<br>
+			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
+			  <input type="checkbox" name="other-stuck" value="Yes" checked> I am with someone that is stuck<br>
+			  <input type="checkbox" name="urgent-help" value="Yes" checked> I need urgent help<br>
 			  <input type="checkbox" name="destruction" value="Yes" checked> Everything is detroyed<br>
 			  <input type="checkbox" name="destruction" value="Medium" checked> There is some destruction around me<br>
-			  <input type="checkbox" name="urgent-help" value="No" checked> I don't see any destructed building<br>
+			  <input type="checkbox" name="destruction" value="No" checked> I don't see any destructed building<br>
 			</form>
 			
 			<div class="app-button orange">Send</div>
@@ -63,51 +64,48 @@
 		<div class="app-title">Tsunami</div>
 	</div>
 
-	<div class="app-content">
+		<div class="app-content">
 		<div class="app-section">
-			<div id="sensordata" style="overflow:hidden">
-      </div>
-		</div>
-
-		<div class="app-section">
-			What car do you want? 
-			<select>
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
+			<div class="app-button orange" onclick="App.load('Home');" >Back</div>
 			
-			<div class="app-button orange">Button 1</div>
-			<div class="app-button orange">Button 3</div>
+			<form action="demo_form.asp">
+			  <input type="checkbox" name="injured" value="Yes"> I am injured<br>
+			  <input type="checkbox" name="other-injured" value="Yes" checked> I am with someone injured<br>
+			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
+			  <input type="checkbox" name="other-stuck" value="Yes" checked> I am with someone that is stuck<br>
+			  <input type="checkbox" name="urgent-help" value="Yes" checked> I need urgent help<br>
+			  <input type="checkbox" name="destruction" value="Yes" checked> Everything is detroyed<br>
+			  <input type="checkbox" name="destruction" value="Medium" checked> There is some destruction around me<br>
+			  <input type="checkbox" name="destruction" value="No" checked> I don't see any destructed building<br>
+			</form>
+			
+			<div class="app-button orange">Send</div>
 		</div>
 
 </div>
 
 <div class="app-page" data-page="Hurricane">
-		<div class="app-topbar gray">
+		<div class="app-topbar grey">
 		<div class="app-title">Hurricane</div>
 	</div>
 
 	<div class="app-content">
 		<div class="app-section">
-			<div id="sensordata" style="overflow:hidden">
-      </div>
-		</div>
-
-		<div class="app-section">
-			What car do you want? 
-			<select>
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
+			<div class="app-button orange" onclick="App.load('Home');" >Back</div>
 			
-			<div class="app-button orange">Button 1</div>
-			<div class="app-button orange">Button 3</div>
+			<form action="demo_form.asp">
+			  <input type="checkbox" name="injured" value="Yes"> I am injured<br>
+			  <input type="checkbox" name="other-injured" value="Yes" checked> I am with someone injured<br>
+			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
+			  <input type="checkbox" name="other-stuck" value="Yes" checked> I am with someone that is stuck<br>
+			  <input type="checkbox" name="urgent-help" value="Yes" checked> I need urgent help<br>
+			  <input type="checkbox" name="destruction" value="Yes" checked> Everything is detroyed<br>
+			  <input type="checkbox" name="destruction" value="Medium" checked> There is some destruction around me<br>
+			  <input type="checkbox" name="destruction" value="No" checked> I don't see any destructed building<br>
+			</form>
+			
+			<div class="app-button orange">Send</div>
 		</div>
-
 </div>
 
 <div class="app-page" data-page="Other">
@@ -115,25 +113,23 @@
 		<div class="app-title">Other</div>
 	</div>
 
-	<div class="app-content">
+		<div class="app-content">
 		<div class="app-section">
-			<div id="sensordata" style="overflow:hidden">
-      </div>
-		</div>
-
-		<div class="app-section">
-			What car do you want? 
-			<select>
-			  <option value="volvo">Volvo</option>
-			  <option value="saab">Saab</option>
-			  <option value="opel">Opel</option>
-			  <option value="audi">Audi</option>
-			</select>
+			<div class="app-button orange" onclick="App.load('Home');" >Back</div>
 			
-			<div class="app-button orange">Button 1</div>
-			<div class="app-button orange">Button 3</div>
+			<form action="demo_form.asp">
+			  <input type="checkbox" name="injured" value="Yes"> I am injured<br>
+			  <input type="checkbox" name="other-injured" value="Yes" checked> I am with someone injured<br>
+			  <input type="checkbox" name="stuck" value="Yes" checked> I am stuck<br>
+			  <input type="checkbox" name="other-stuck" value="Yes" checked> I am with someone that is stuck<br>
+			  <input type="checkbox" name="urgent-help" value="Yes" checked> I need urgent help<br>
+			  <input type="checkbox" name="destruction" value="Yes" checked> Everything is detroyed<br>
+			  <input type="checkbox" name="destruction" value="Medium" checked> There is some destruction around me<br>
+			  <input type="checkbox" name="destruction" value="No" checked> I don't see any destructed building<br>
+			</form>
+			
+			<div class="app-button orange">Send</div>
 		</div>
-
 </div>
 
 
