@@ -18,7 +18,7 @@
 })();
 
 var data = {}; 
-var res = "";
+
 
 function checkedBox(checkbox)
 {
@@ -26,7 +26,7 @@ function checkedBox(checkbox)
     	//console.log("yay");
     	//data["Main"] = jq_TabContents_Mian;
         data[checkbox.name] = checkbox.value;
-
+	var res = "";
         for (var key in data) {
     		res = res + key + ": " + data[key] + "\r";
 	}
@@ -38,7 +38,7 @@ function changeSelect(sel)
 {
 
         data[sel.name] = sel.value;
-
+	var res = "";
         for (var key in data) {
     		res = res + key + ": " + data[key] + "\r";
 	}
