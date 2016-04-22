@@ -20,7 +20,7 @@
 	{
 	    if (checkbox.checked)
 	    {
-	        $("#counter").html(666)
+	        $("#counter").html("666")
 	    }
 	}
 	
