@@ -28,7 +28,7 @@ function checkedBox(checkbox)
         data[checkbox.name] = checkbox.value;
         var res = "";
         for (var key in data) {
-    		res = res + key + ": " + data[key] + "\n";
+    		res = res + key + ": " + data[key] + "\r";
 	}
 	$("#counter").html(res);
     
