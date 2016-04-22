@@ -17,14 +17,20 @@
 
 })();
 
-var x = 5;
+var data = {}; // no need for an array
+
+
+/*for (var key in arr_jq_TabContents) {
+    console.log(arr_jq_TabContents[key]);
+}*/
+
 function checkedBox(checkbox)
 {
-    if (checkbox.checked)
-    {
+   
     	console.log("yay");
+    	//data["Main"] = jq_TabContents_Mian;
         $("#counter").html(checkbox.name + " set to " +checkbox.value);
-    }
+    
 }
 
 function changeSelect(sel)
