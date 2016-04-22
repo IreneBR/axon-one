@@ -25,7 +25,7 @@ function checkedBox(checkbox)
     	//console.log("yay");
     	//data["Main"] = jq_TabContents_Mian;
         $("#counter").html(checkbox.name + " set to " +checkbox.value);
-        
+        data[checkbox.name] = checkbox.value;
         var res = "damn";
         for (var key in data) {
     		res = res + key + ": " + data[key];
