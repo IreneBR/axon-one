@@ -23,6 +23,6 @@ function checkCounter(checkbox)
     if (checkbox.checked)
     {
     	console.log("yay");
-        $("#counter").html(checkbox.value);
+        $("#counter").html(checkbox.value + " go to hell");
     }
 }
