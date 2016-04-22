@@ -52,5 +52,14 @@ function changeSelect(sel)
 
 function sendData()
 {
-	alert("Sending " + data);
+	var res = makeResultString();
+	alert("Sending " + res);
 } 
+
+function makeResultString(){
+	var res = "";
+	for (var key in data) {
+    		res = res + key + ": " + data[key] + "\r";
+	}
+	return res;
+}
