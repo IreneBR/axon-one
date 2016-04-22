@@ -1,7 +1,7 @@
 (function(){
 
 	//call the UI page "home"
-	App.load('home');
+	App.load('Home');
 	
 	setInterval(function(){
 	
