@@ -2,6 +2,7 @@
 
 	//call the UI page "home"
 	App.load('Home');
+	var x = 5;
 	
 	setInterval(function(){
 	
