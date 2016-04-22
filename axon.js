@@ -49,3 +49,8 @@ function changeSelect(sel)
 	}
 	$("#counter").html(res);
 }
+
+function sendData()
+{
+	
+}
