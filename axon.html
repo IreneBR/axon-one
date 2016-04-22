@@ -44,15 +44,17 @@
 		<div class="app-section">
 			<div class="app-button orange" onclick="App.load('Home');" >Back</div>
 			
-			  <input type="checkbox" name="injured" value="Yes" onclick="checkCounter(this)"> I am injured<br>
-			  <input type="checkbox" name="other-injured" value="Yes" > I am with someone injured<br>
-			  <input type="checkbox" name="stuck" value="Yes" > I am stuck<br>
-			  <input type="checkbox" name="other-stuck" value="Yes" > I am with someone that is stuck<br>
-			  <input type="checkbox" name="urgent-help" value="Yes" > I need urgent help<br>
-			  <input type="checkbox" name="destruction" value="Yes" > Everything is detroyed<br>
-			  <input type="checkbox" name="destruction" value="Medium" > There is some destruction around me<br>
-			  <input type="checkbox" name="destruction" value="No" > I don't see any destructed building<br>
-
+			  <input type="checkbox" name="injured" value="Yes" onclick="checkedBox(this)"> I am injured<br>
+			  <input type="checkbox" name="other-injured" value="Yes" onclick="checkedBox(this)"> I am with someone injured<br>
+			  <input type="checkbox" name="stuck" value="Yes" onclick="checkedBox(this)"> I am stuck<br>
+			  <input type="checkbox" name="other-stuck" value="Yes" onclick="checkedBox(this)"> I am with someone that is stuck<br>
+			  <input type="checkbox" name="urgent-help" value="Yes" onclick="checkedBox(this)"> I need urgent help<br>
+			  <input type="checkbox" name="destruction" value="Yes" onclick="checkedBox(this)"> Everything is detroyed<br>
+			  <input type="checkbox" name="destruction" value="Medium" onclick="checkedBox(this)"> There is some destruction around me<br>
+			  <input type="checkbox" name="destruction" value="No" onclick="checkedBox(this)"> I don't see any destructed building<br>
+			
+			<div id="counter" > omg omg
+      			</div>
 			
 			<div class="app-button orange">Send</div>
 		</div>
