@@ -29,7 +29,7 @@ function checkedBox(checkbox)
     	if (checkbox.checked){
         	data[checkbox.name] = checkbox.value;
     	} else {
-    		delete data[checkbox.nam];
+    		delete data[checkbox.name];
     	}
 	var res = "";
         for (var key in data) {
