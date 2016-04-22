@@ -54,6 +54,7 @@ function sendData()
 } 
 
 function storeNameValue(name, val){
+	alert("Name: " + name + " val: " + val);
 	$.ajax({ type: 'POST',
 	processData: false,
 	contentType: 'application/json',
