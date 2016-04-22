@@ -16,11 +16,11 @@
 	}, 1000);
 	
 	
-	function checkAddress(checkbox)
+	function checkCounter(checkbox)
 	{
 	    if (checkbox.checked)
 	    {
-	        alert("a");
+	        $("#counter").html(666)
 	    }
 	}
 	
