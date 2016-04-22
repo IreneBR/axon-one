@@ -53,12 +53,13 @@ function sendData()
 	storeNameValue("Omg","Yas");
 } 
 
-function storeNameValue(name, val){
+function storeNameValue(nam, val){
 	$.ajax({ type: 'POST',
 	processData: false,
-	contentType: 'application/json',
+	//contentType: 'application/json',
+	contentType: 'text',
 	//data: '{"Name":"VALLL"}',
-	data: {name:val},
+	data: {nam:val},
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { console.log('/sayHello POST was successful.'); console.log(json); } });
 	
