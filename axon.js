@@ -17,13 +17,12 @@
 
 })();
 
-	var x = 5;
-	
-	function checkCounter(checkbox)
-	{
-	    if (checkbox.checked)
-	    {
-	    	console.log("yay");
-	        $("#counter").html("666");
-	    }
-	}
+var x = 5;
+function checkCounter(checkbox)
+{
+    if (checkbox.checked)
+    {
+    	console.log("yay");
+        $("#counter").html(checkbox.value);
+    }
+}
