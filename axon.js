@@ -54,13 +54,14 @@ function sendData()
 } 
 
 function storeNameValue(name, val){
-	alert("Name: " + name + " val: " + val);
 	$.ajax({ type: 'POST',
 	processData: false,
 	contentType: 'application/json',
-	data: '{"scream": "hell"}',
+	data: '{'name': 'val'}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { console.log('/sayHello POST was successful.'); console.log(json); } });
+	
+	alert("Name: " + name + " val: " + val);
 }
 
 function makeResultString(){
