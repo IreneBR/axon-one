@@ -5,10 +5,10 @@
 
 	setInterval(function(){
 	
-		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/GPS", function( gps ) {
+		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/GPS", function( data ) {
 			
-			$("#sensordata").html(JSON.stringify(gps));
-			
+			$("#sensordata").html(JSON.stringify(data));
+			gps = JSON.stringify(data);
 		});
 		
 		
@@ -17,7 +17,8 @@
 
 })();
 
-var gps = {}; 
+var data = {}; 
+var gps = "";
 
 
 function checkedBox(checkbox)
@@ -54,7 +55,7 @@ function sendData()
 } 
 
 function storeNameValue(nam, val){
-	
+	alert("scheiss " + gps);
 	obj = JSON.parse(gps);
 	
 	$.ajax({ type: 'POST',
