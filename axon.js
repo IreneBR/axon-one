@@ -58,8 +58,8 @@ function storeNameValue(nam, val){
 	processData: false,
 	contentType: 'application/json',
 	//contentType: 'text',
-	//data: '{"Name":"VALLL"}',
-	data: '{""+"WAT": "ssss"+"eh"}',
+	data: '{"Name":"VALLL"}',
+	//data: '{""+"WAT": "ssss"+"eh"}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
 		console.log('/sayHello POST was successful.'); 
