@@ -57,14 +57,11 @@ function storeNameValue(nam, val){
 	$.ajax({ type: 'POST',
 	processData: false,
 	contentType: 'application/json',
-	//contentType: 'text',
-	data: '{"Name":"VALLL"}',
-	//data: '{""+"WAT": "ssss"+"eh"}',
+	data: '{"name": "Guillaume"}', 
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
-		console.log('/sayHello POST was successful.'); 
+		console.log('/sayHello POST was successful.');
 		console.log(json); 
-		alert(json);
 	} });
 	
 	alert("Name: " + name + " val: " + val);
