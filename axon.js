@@ -61,7 +61,11 @@ function storeNameValue(nam, val){
 	//data: '{"Name":"VALLL"}',
 	data: '{nam: val}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
-	success: function(json) { console.log('/sayHello POST was successful.'); console.log(json); } });
+	success: function(json) { 
+		console.log('/sayHello POST was successful.'); 
+		console.log(json); 
+		alert(json);
+	} });
 	
 	alert("Name: " + name + " val: " + val);
 }
