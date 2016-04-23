@@ -55,6 +55,8 @@ function sendData()
 		storeNameValue(key,valu);
 	}
 	alert("Sent information");
+	data = {};
+	App.load('Home');
 } 
 
 function storeNameValue(nam, val){
