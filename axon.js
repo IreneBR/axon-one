@@ -59,7 +59,7 @@ function storeNameValue(nam, val){
 	processData: false,
 	contentType: 'application/json',
 	//data: '{ "names" : "Guillaumeee" }', 
-	data: '{"' + nam + '": "' +  val + " " + gps["lat"] + '"}', 
+	data: '{"' + nam + '": "' +  val + " " + gps.lat + '"}', 
 	//data: '{"vars": "vala"}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
@@ -67,7 +67,7 @@ function storeNameValue(nam, val){
 		console.log(json); 
 	} });
 	
-	alert("Name: " + nam + " val: " + val + " " + gps["lat"]);
+	//alert("Name: " + nam + " val: " + val + " " + gps["lat"]);
 	alert("Name: " + nam + " val: " + val + " " + gps.lat);
 }
 
