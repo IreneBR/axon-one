@@ -78,10 +78,10 @@ function sendData()
 {
 	var obj = JSON.parse(gps);
 	for (var key in data) {
-    		var valu = ":name_" + data[key] + "::" + obj.lat + "::" + obj.long + "::" + getDateTime();
+    		var valu = "::name_" + data[key] + "::" + obj.lat + "::" + obj.long + "::" + getDateTime();
 		storeNameValue(key,valu);
 	}
-	alert("Sent information");
+	alert("Information Sent");
 	data = {};
 	App.load('Home');
 } 
