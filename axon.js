@@ -49,20 +49,23 @@ function changeSelect(sel)
 
 function sendData()
 {
-	var res = makeResultString();
+	var obj = JSON.parse(gps);
+	for (var key in data) {
+    		var valu = data[key] + "::" + obj.lat + "::" + obj.long;
+		storeNameValue(key,valu);
+	}
 //	alert("Sending " + res);
-	storeNameValue("omg","yas");
 } 
 
 function storeNameValue(nam, val){
 	alert("scheiss " + gps);
-	obj = JSON.parse(gps);
+	
 	
 	$.ajax({ type: 'POST',
 	processData: false,
 	contentType: 'application/json',
 	//data: '{ "names" : "Guillaumeee" }', 
-	data: '{"' + nam + '": "' +  val + " " + obj.lat + '"}', 
+	data: '{"' + nam + '": "' +  val + '"}', 
 	//data: '{"vars": "vala"}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
@@ -71,7 +74,7 @@ function storeNameValue(nam, val){
 	} });
 	
 	//alert("Name: " + nam + " val: " + val + " " + gps["lat"]);
-	alert("Name: " + nam + " val: " + val + " " + obj.lat);
+	alert("Name: " + nam + " val: " + val);
 }
 
 function makeResultString(){
