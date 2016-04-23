@@ -59,7 +59,7 @@ function storeNameValue(nam, val){
 	processData: false,
 	contentType: 'application/json',
 	//data: '{ "names" : "Guillaumeee" }', 
-	data: '{' + nam + ': ' +  val +'}', 
+	data: '{"' + nam + '": "' +  val +'"}', 
 	//data: '{"vars": "vala"}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
