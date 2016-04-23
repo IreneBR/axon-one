@@ -51,7 +51,7 @@ function sendData()
 {
 	var obj = JSON.parse(gps);
 	for (var key in data) {
-    		var valu = data[key] + "::" + obj.lat + "::" + obj.long;
+    		var valu = "name_" + data[key] + "::" + obj.lat + "::" + obj.long;
 		storeNameValue(key,valu);
 	}
 	alert("Sent information");
