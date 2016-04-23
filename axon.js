@@ -54,11 +54,11 @@ function sendData()
     		var valu = data[key] + "::" + obj.lat + "::" + obj.long;
 		storeNameValue(key,valu);
 	}
-//	alert("Sending " + res);
+	alert("Sent information");
 } 
 
 function storeNameValue(nam, val){
-	alert("scheiss " + gps);
+	//alert("scheiss " + gps);
 	
 	
 	$.ajax({ type: 'POST',
@@ -73,8 +73,7 @@ function storeNameValue(nam, val){
 		console.log(json); 
 	} });
 	
-	//alert("Name: " + nam + " val: " + val + " " + gps["lat"]);
-	alert("Name: " + nam + " val: " + val);
+	//alert("Name: " + nam + " val: " + val);
 }
 
 function makeResultString(){
