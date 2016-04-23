@@ -5,10 +5,9 @@
 
 	setInterval(function(){
 	
-		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/GPS", function( data ) {
+		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/GPS", function( gps ) {
 			
-			$("#sensordata").html(JSON.stringify(data));
-			gps = JSON.stringify(data);
+			$("#sensordata").html(JSON.stringify(gps));
 			
 		});
 		
@@ -18,8 +17,7 @@
 
 })();
 
-var gps = "";
-var data = {}; 
+var gps = {}; 
 
 
 function checkedBox(checkbox)
@@ -70,6 +68,7 @@ function storeNameValue(nam, val){
 	} });
 	
 	alert("Name: " + nam + " val: " + val + " " + gps["lat"]);
+	alert("Name: " + nam + " val: " + val + " " + gps.lat);
 }
 
 function makeResultString(){
