@@ -8,6 +8,7 @@
 		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/GPS", function( data ) {
 			
 			$("#sensordata").html(JSON.stringify(data));
+			gps = JSON.stringify(data);
 			
 		});
 		
@@ -17,6 +18,7 @@
 
 })();
 
+var gps = "";
 var data = {}; 
 
 
@@ -59,7 +61,7 @@ function storeNameValue(nam, val){
 	processData: false,
 	contentType: 'application/json',
 	//data: '{ "names" : "Guillaumeee" }', 
-	data: '{"' + nam + '": "' +  val +'"}', 
+	data: '{"' + nam + '": "' +  val + gps + '"}', 
 	//data: '{"vars": "vala"}',
 	url: 'http://axonserver-mistelip.c9users.io:8080/',
 	success: function(json) { 
