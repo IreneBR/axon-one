@@ -96,7 +96,7 @@ function storeNameValue(nam, val){
 	//data: '{ "names" : "Guillaumeee" }', 
 	data: '{"' + nam + '": "' +  val + '"}', 
 	//data: '{"vars": "vala"}',
-	url: 'http://axonserver-mistelip.c9users.io:8080/',
+	url: '129.132.255.27:8445/',
 	success: function(json) { 
 		console.log('/sayHello POST was successful.');
 		console.log(json); 
